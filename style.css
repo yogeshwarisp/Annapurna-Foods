@@ -1,0 +1,133 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+html{ scroll-behavior:smooth; }
+
+body{
+    background:#f5fbff;
+    color:#2f2f2f;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0288d1;
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    margin:0 18px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.lang-btn{
+    background:white;
+    color:#0288d1;
+    border:none;
+    padding:6px 14px;
+    border-radius:20px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-left:15px;
+}
+
+/* SECTIONS */
+section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+/* HOME */
+.home{
+    height:100vh;
+    background:linear-gradient(to right,#81d4fa,#e3f2fd);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.center-image{
+    width:600px;
+    max-width:95%;
+}
+
+.home p{
+    font-size:22px;
+    margin-top:20px;
+}
+
+/* HOME CORNER IMAGES */
+.home-left,
+.home-right{
+    position:absolute;
+    bottom:20px;
+    width:160px;
+    opacity:0.9;
+}
+
+.home-left{ left:30px; }
+.home-right{ right:30px; }
+
+/* ABOUT SECTION SPACING */
+.about-section h2{
+    margin-bottom: 30px;   /* space below title */
+    font-size: 30px;
+}
+
+.about-section p{
+    max-width: 900px;      /* keeps text centered & readable */
+    margin: auto;
+    line-height: 1.8;      /* space between lines */
+    font-size: 18px;
+}
+
+/* GRID */
+.food-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:25px;
+    max-width:1000px;
+    margin:40px auto 0;
+}
+
+/* CARD */
+.food-card{
+    border:3px solid #f1c40f;
+    border-radius:16px;
+    padding:15px;
+    background:white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+.food-card img{
+    width:100%;
+    height:160px;
+    object-fit:contain;
+}
+
+.food-card p{
+    margin-top:12px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    background:#0288d1;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
